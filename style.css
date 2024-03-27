@@ -1,0 +1,61 @@
+body{/*todo el body */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background: linear-gradient(to right,violet,green); /*color de fondo linear gradiante que empieza desde la derecha hacia la izquierda*/ 
+   padding: 0;
+   margin: 0;
+   padding-bottom: 50px;/*para que el footer no tape las letras */ 
+}
+
+
+
+/*aqui empieza el estilo a la barra de navegacion*/
+header{/*cabezera estilos */
+    text-align: center;/*tecto alineado al centro el que este dentro del hader */
+    /* position: fixed; en este caso el menu se queda pegado en la parte de arriba */
+    /* top: 0 ;top significa arriba */
+    /* width: 100%;y que ocupe todo el ancho */
+
+}
+.active {/*clase activa para cuando estemos situados en algucitio ejeplo inicio u home */
+  background-color: blueviolet;/*color que se le va a poner al sitio cuando este activo */
+}
+ul{/*para darle estilos a listas ordenadas*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  
+}
+li{/*dando estilo a las li */
+    float:left;/*alinear las li a la izquierda */
+}
+
+li a {/*las a o los link dentros de las li se le aplicaran el estilo */
+    display: block; /*para que ocupen todo el ancho que les permita */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+
+}
+li a:hover:not(.active){/*sobra al pasar el mouse sobre algun de la barra de navegacio menos al que tenga la clase active */
+    background-color: #111;
+}
+
+
+h1{/*dandole estilo al titulo*/
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    color: blueviolet;
+}
+footer{/*estilo al fotter*/ 
+    background-color: #333;/*color de fondo en el footer*/ 
+    color: white;/*color de letra r*/ 
+    padding: 15px;/*el paddin es el espacio interno */ 
+    text-align: center;
+    position: fixed;/*para que el footer se quede pegado en este caso abajo */
+    bottom: 0;/*merge de la parte de abajo cero para que funcione bien el fixed*/  
+    width: 100%;/*para que agarre todo la pantalla el footer*/ 
+}

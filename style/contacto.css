@@ -1,0 +1,48 @@
+.contenedor{
+    background-color: #999;/*color de fondo del contenedor*/
+    border-radius: 10px;/*LE borde del contenedor */
+    margin: 10px 0;/*el margen el 10 en vertcal "0" Horizontal*/
+    padding: 20px; /*una separacion de 20 pixeles*/
+    width: 50%;/*un ancho del 50%*/
+    position: relative;
+    left: 25%;
+}
+
+/*aplicar los selectores por atributos */
+input[type="text"],
+input[type="mail"],
+select,
+textarea{
+
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid green;
+    border-radius: 10px;
+    box-sizing: border-box; /*para que no sobre salga lo que esta dentro del contenedor */
+}
+
+
+/*dar estilo a un boton */
+input[type=submit]{
+    width: 100%; /*ancho que ocupa el boton dentro del contenedor */
+    background-color: green;/*color de fondo del boton*/
+    color: aliceblue;/*color de la letra del boton*/
+    padding: 15px 20px;/*horizontal 15 pixeles vertical 20pixeles*/
+    margin: 8px 0;/*un margen de 8pixeles vertical y 0 pixeles horizontal */
+    border: none ;
+    border-radius: 10px;
+    cursor:pointer;/*cambia el estilo del cursor */
+
+}
+
+
+/*el hover en el boton */
+input[type="submit"]:hover{
+    background-color: green;
+}
+
+/*focus en los input*/
+textarea:focus,input:focus{
+    background-color: aqua;
+}
